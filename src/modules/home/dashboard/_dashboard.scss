@@ -1,0 +1,21 @@
+.dashboard{
+  padding: 0 2rem 3rem;
+  .charts{
+    display: flex;
+    gap: 3rem;
+    .dev{
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1250px){
+  .dashboard{
+    .charts{
+      flex-direction: column;
+      .dev{
+        width: 100%;
+      }
+    }
+  }
+}

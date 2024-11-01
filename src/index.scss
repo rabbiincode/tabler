@@ -5,7 +5,7 @@
 }
 
 html, body{
-  background: #fff;
+  background: #f5f7fb;
   color: #000;
   min-height: 100%;
   max-width: 2500px;
@@ -16,6 +16,28 @@ html, body{
   font-style: normal;
   font-family: sans-serif;
   scrollbar-gutter: stable;
+}
+textarea:focus,
+button, button:focus,
+input, input:focus, textarea{
+  background: transparent;
+  color: var(--text);
+  border: none;
+  outline: none;
+}
+
+button{
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+button:disabled, input:disabled{
+  opacity: 0.8;
+  cursor: auto;
 }
 
 /* width */

@@ -1,0 +1,93 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  & figure{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    & span{
+      position: relative;
+      background: #3289ef;
+      color: #fff;
+      display: flex;
+      align-items: flex-end;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      padding: 0 0.25rem 0 0;
+      & small{
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.15rem;
+      }
+    }
+  }
+  .profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    & button{
+      color: #3289ef;
+      font-size: 1.1rem;
+      border: 0.0625rem solid #3289ef;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.25rem;
+    }
+    & span{
+      position: relative;
+      & small{
+        position: absolute;
+        top: -0.25rem;
+        right: -0.25rem;
+        background: #fa3333;
+        width: 0.65rem;
+        height: 0.65rem;
+        border-radius: 50%;
+      }
+    }
+    .avatar{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      .icon{
+        width: 3rem;
+        height: 3rem;
+      }
+      .name{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        & strong{
+          font-size: 1.25rem;
+          font-weight: 600;
+          opacity: 0.5;
+        }
+        & small{
+          font-size: 1rem;
+          font-weight: 400;
+          opacity: 0.35;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px){
+  .header{
+    .profile{
+      & button{
+        display: none;
+      }
+      .avatar{
+        .name{
+          display: none;
+        }
+      }
+    }
+  }
+}

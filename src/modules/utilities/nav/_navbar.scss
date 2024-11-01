@@ -1,0 +1,39 @@
+.navbar{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow: auto;
+  padding: 0 2rem;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  & span{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    padding: 1.5rem 0;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 0.25rem;
+      border-radius: 0.25rem 0.25rem 0 0;
+      background: #3289ef;
+      z-index: -1;
+      transition: 0.5s all ease;
+      -webkit-transition: all 0.5s;
+    }
+  }
+  & span:hover::after, .active::after{
+    width: 100%;
+  }
+}

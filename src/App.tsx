@@ -1,9 +1,4 @@
-import React from 'react'
+import Home from './modules/home/home/Home'
 
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
-
+const App = () => <Home/>
 export default App
