@@ -54,6 +54,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      cursor: pointer;
       .icon{
         width: 3rem;
         height: 3rem;
@@ -74,6 +75,14 @@
         }
       }
     }
+  }
+}
+.dropdown{
+  background: #f5f7fb;
+  & p{
+    background: #fff;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
   }
 }
 

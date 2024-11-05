@@ -3,6 +3,7 @@ import { Avatar } from '@mui/material'
 import { Line } from 'react-chartjs-2'
 import { development } from './developmentData'
 import { DeleteOutline } from '@mui/icons-material'
+// import { useDispatch, useSelector } from 'react-redux'
 import { DevelopmentData } from '../../../interface/development'
 import { Chart as ChartJS, LineElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement } from 'chart.js'
 import './_development.scss'
@@ -10,6 +11,8 @@ import './_development.scss'
 ChartJS.register(LineElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement)
 
 const Development = () => {
+  // const dispatch = useDispatch();
+  // const { data, loading, error } = useSelector((state) => state.data);
   const lineData = {
     labels: Array.from({ length: 10 }, (_, i) => `Day ${i + 1}`),
     datasets: [
@@ -41,6 +44,13 @@ const Development = () => {
       },
     },
   }
+
+  // useEffect(() => {
+  //   dispatch(fetchDataRequest());
+  // }, [dispatch]);
+
+  // if (loading) return <p>Loading...</p>;
+  // if (error) return <p>{error}</p>
 
   return (
     <div className='development'>
