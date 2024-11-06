@@ -14,7 +14,7 @@ const store = configureStore({
     user: userReducer
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware), // Include saga middleware and disable thunk if you are using saga
+    getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware)
 })
 
 // Run the saga
