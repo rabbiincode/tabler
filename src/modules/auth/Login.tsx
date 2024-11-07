@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { RootState } from '../../redux/store'
 import { useNavigate } from 'react-router-dom'
-import { ChevronLeft, Visibility, VisibilityOff } from '@mui/icons-material'
 import { useDispatch, useSelector } from 'react-redux'
 import { loginRequest } from '../../redux/actions/authActions'
+import { ChevronLeft, Visibility, VisibilityOff } from '@mui/icons-material'
 import './_login.scss'
 
 const Login = () => {
@@ -24,7 +24,7 @@ const Login = () => {
       <ChevronLeft onClick={() => navigate('/')} fontSize='large' className='back'/>
       <div className='content'>
         <h2>Login</h2>
-        {user && <p>Welcome, {user.email}!</p>}
+        {user && <p className='welcome'>Welcome, {user.email}!</p>}
         <form onSubmit={handleSubmit}>
           <div className='input'>
             <label>Email:</label>
@@ -42,12 +42,12 @@ const Login = () => {
               <input
                 type={show ? 'text' : 'password'}
                 value={address}
-                placeholder='123456@Aa'
+                placeholder='12345@Aa'
                 onChange={(e) => setAddress(e.target.value)}
                 required
               />
               <div onClick={() => setShow(!show)}>
-                {show ? <Visibility cursor='pointer'/> : <VisibilityOff cursor='pointer'/>}
+                {show ? <VisibilityOff cursor='pointer'/> : <Visibility cursor='pointer'/>}
               </div>
             </div>
           </div>

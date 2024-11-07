@@ -6,7 +6,7 @@ import { LoginRequestAction, LOGIN_REQUEST } from '../authActionTypes';
 const fakeApiCall = (email: string, password: string) => {
   return new Promise<{ email: string; password: string }>((resolve, reject) => {
     setTimeout(() => {
-      if (email === 'test@example.com' && password === '123 Main St') {
+      if (email === 'you@tabler.com' && password === '12345@Aa') {
         resolve({ email, password });
       } else {
         reject('Invalid email or password');

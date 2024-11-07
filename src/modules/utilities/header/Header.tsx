@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Avatar, Popper, Tooltip } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import { Avatar, Popper, Tooltip } from '@mui/material'
 import { ChevronRight, NotificationsNone } from '@mui/icons-material'
 import './_header.scss'
 
