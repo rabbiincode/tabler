@@ -1,9 +1,9 @@
 import { LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS } from "../authActionTypes"
 
 // Action to trigger the login request
-export const loginRequest = (email: string, address: string) => ({
+export const loginRequest = (email: string, password: string) => ({
   type: LOGIN_REQUEST,
-  payload: { email, address },
+  payload: { email, password },
 })
 
 // Action when login is successful

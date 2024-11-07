@@ -2,6 +2,12 @@
   position: relative;
   height: 100vh;
   padding: 2rem;
+  .back{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    cursor: pointer;
+  }
   .content{
     position: absolute;
     top: 50%;
@@ -28,7 +34,16 @@
           font-weight: 500;
           margin-top: 1.5rem;
         }
+        .inputs{
+          background: #fff;
+          display: flex;
+          align-items: center;
+          border-radius: 0.5rem;
+          justify-content: center;
+          padding: 0 1rem 0 0;
+        }
         & input{
+          width: 100%;
           background: #fff;
           font-size: 1.25rem;
           border-radius: 0.5rem;

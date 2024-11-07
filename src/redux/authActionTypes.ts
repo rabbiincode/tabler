@@ -9,7 +9,7 @@ export interface LoginRequestAction {
   type: typeof LOGIN_REQUEST
   payload: {
     email: string
-    address: string
+    password: string
   }
 }
 
@@ -17,7 +17,7 @@ export interface LoginSuccessAction {
   type: typeof LOGIN_SUCCESS
   payload: {
     email: string
-    address: string
+    password: string
   }
 }
 

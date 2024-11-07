@@ -36,7 +36,7 @@ const Header = () => {
               <small>Administrator</small>
             </div>
           </div>
-          <Popper open={Boolean(anchorEl)} anchorEl={anchorEl}>
+          <Popper open={Boolean(anchorEl)} anchorEl={anchorEl} sx={{p:'1rem'}}>
             {dropdown}
           </Popper>
         </div>
