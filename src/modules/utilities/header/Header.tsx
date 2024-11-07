@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Avatar, Popper } from '@mui/material'
+import { Avatar, Popper, Tooltip } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { ChevronRight, NotificationsNone } from '@mui/icons-material'
 import './_header.scss'
@@ -24,10 +24,12 @@ const Header = () => {
       </figure>
       <div className='profile'>
         <button>Source code</button>
-        <span>
-          <NotificationsNone fontSize='large'/>
-          <small></small>
-        </span>
+        <Tooltip title='Notifications'>
+          <span>
+            <NotificationsNone fontSize='large'/>
+            <small></small>
+          </span>
+        </Tooltip>
         <div>
           <div onClick={(e: any) => handleClick(e)} className='avatar'>
             <Avatar className='icon'/>
